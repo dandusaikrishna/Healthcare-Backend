@@ -1,0 +1,2002 @@
+{
+	"info": {
+		"_postman_id": "f4f2b821-5e14-4095-a9be-d153cdcc2154",
+		"name": "Healthcare API",
+		"description": "Collection for Healthcare Backend API endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46708808",
+		"_collection_link": "https://saikrishna-5492098.postman.co/workspace/Sai-Krishna's-Workspace~8553c606-fc25-4e7c-81de-15594058d658/collection/46708808-f4f2b821-5e14-4095-a9be-d153cdcc2154?action=share&source=collection_link&creator=46708808"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"Sai\",\n    \"email\": \"saikrishnadandu9@gmail.com\",\n    \"password\": \"sai6303\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Register User-Sample",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"Sai\",\n    \"email\": \"saikrishnadandu9@gmail.com\",\n    \"password\": \"sai6303\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/auth/register/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"auth",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 27 Aug 2025 18:31:48 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.9"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "62"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"username\": \"Sai\",\n    \"email\": \"saikrishnadandu9@gmail.com\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Login User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"Sai\",\n    \"password\": \"sai6303\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/login/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"login",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login User-Sample",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"Sai\",\n    \"password\": \"sai6303\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/auth/login/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"auth",
+										"login",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 27 Aug 2025 18:32:36 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.9"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "483"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1NjQwNTk1NSwiaWF0IjoxNzU2MzE5NTU1LCJqdGkiOiJiMzQzMzNhZGMyZmY0Nzc5YTljMTI1NmNlZmEyMDFlZiIsInVzZXJfaWQiOjF9.3BGmfZMDHshwsEBBD7LGeCKZmT0n25HNDR1DHPYSBNs\",\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MzIzMTU1LCJpYXQiOjE3NTYzMTk1NTUsImp0aSI6IjM4YmIxMGY5MjFhMDQ4NGViYjA3ZTU2N2ZlZjRlMmEwIiwidXNlcl9pZCI6MX0.KuWF_ipNUgebGtzpPVKgjvtVgKhVVByY4-NXoDDjQVA\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Refresh Token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1NjQwNTk5MSwiaWF0IjoxNzU2MzE5NTkxLCJqdGkiOiJiYTZiZjI1NDk4NjQ0ZGFmYTk2ZjFlM2Y0ZTkzNmJkNCIsInVzZXJfaWQiOjF9.mqPAKGLsuZRrb8qwOmUaP4Yi1zFuascnYX7l5NVMiF0\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/refresh/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"refresh",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Refresh Token-Sample",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1NjQwNTk5MSwiaWF0IjoxNzU2MzE5NTkxLCJqdGkiOiJiYTZiZjI1NDk4NjQ0ZGFmYTk2ZjFlM2Y0ZTkzNmJkNCIsInVzZXJfaWQiOjF9.mqPAKGLsuZRrb8qwOmUaP4Yi1zFuascnYX7l5NVMiF0\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/auth/refresh/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"auth",
+										"refresh",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 27 Aug 2025 18:33:39 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.9"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "241"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MzIzMjE5LCJpYXQiOjE3NTYzMTk1OTEsImp0aSI6ImM4ZjI5ZDRjYmZiNjQ0OGM4NTY3N2E2YTA3ZGY3OThlIiwidXNlcl9pZCI6MX0.NYp5PlG-4TJUzuFGJrZYNjUPXlvnuycyrWycQ_aenMk\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Patients",
+			"item": [
+				{
+					"name": "Create Patient",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MzIzMjE5LCJpYXQiOjE3NTYzMTk1OTEsImp0aSI6ImM4ZjI5ZDRjYmZiNjQ0OGM4NTY3N2E2YTA3ZGY3OThlIiwidXNlcl9pZCI6MX0.NYp5PlG-4TJUzuFGJrZYNjUPXlvnuycyrWycQ_aenMk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"John Doe\",\n    \"age\": 30,\n    \"gender\": \"Male\",\n    \"contact\": \"1234567890\",\n    \"address\": \"123 Main St\",\n    \"medical_history\": \"No major issues\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/patients/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"patients",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Patient-Sample",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"John Doe\",\n    \"age\": 30,\n    \"gender\": \"Male\",\n    \"contact\": \"1234567890\",\n    \"address\": \"123 Main St\",\n    \"medical_history\": \"No major issues\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/patients/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"patients",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 27 Aug 2025 18:38:35 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.9"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "229"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"John Doe\",\n    \"age\": 30,\n    \"gender\": \"Male\",\n    \"contact\": \"1234567890\",\n    \"address\": \"123 Main St\",\n    \"medical_history\": \"No major issues\",\n    \"created_at\": \"2025-08-27T18:38:35.753988Z\",\n    \"updated_at\": \"2025-08-27T18:38:35.753988Z\",\n    \"user\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Patients",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MzIzMjE5LCJpYXQiOjE3NTYzMTk1OTEsImp0aSI6ImM4ZjI5ZDRjYmZiNjQ0OGM4NTY3N2E2YTA3ZGY3OThlIiwidXNlcl9pZCI6MX0.NYp5PlG-4TJUzuFGJrZYNjUPXlvnuycyrWycQ_aenMk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/patients/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"patients",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Patients-Sample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/patients/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"patients",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 27 Aug 2025 18:47:25 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.9"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "468"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"John Doe\",\n        \"age\": 30,\n        \"gender\": \"Male\",\n        \"contact\": \"1234567890\",\n        \"address\": \"123 Main St\",\n        \"medical_history\": \"No major issues\",\n        \"created_at\": \"2025-08-27T18:38:35.753988Z\",\n        \"updated_at\": \"2025-08-27T18:38:35.753988Z\",\n        \"user\": 1\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Sai Krishna\",\n        \"age\": 22,\n        \"gender\": \"Male\",\n        \"contact\": \"9381752077\",\n        \"address\": \"Plot 1/p Hyderabad\",\n        \"medical_history\": \"Body checkup\",\n        \"created_at\": \"2025-08-27T18:47:18.597303Z\",\n        \"updated_at\": \"2025-08-27T18:47:18.597303Z\",\n        \"user\": 1\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Patient by ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MzIzMjE5LCJpYXQiOjE3NTYzMTk1OTEsImp0aSI6ImM4ZjI5ZDRjYmZiNjQ0OGM4NTY3N2E2YTA3ZGY3OThlIiwidXNlcl9pZCI6MX0.NYp5PlG-4TJUzuFGJrZYNjUPXlvnuycyrWycQ_aenMk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/patients/2/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"patients",
+								"2",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Patient by ID-Sample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/patients/2/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"patients",
+										"2",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 27 Aug 2025 18:48:45 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.9"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "236"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"name\": \"Sai Krishna\",\n    \"age\": 22,\n    \"gender\": \"Male\",\n    \"contact\": \"9381752077\",\n    \"address\": \"Plot 1/p Hyderabad\",\n    \"medical_history\": \"Body checkup\",\n    \"created_at\": \"2025-08-27T18:47:18.597303Z\",\n    \"updated_at\": \"2025-08-27T18:47:18.597303Z\",\n    \"user\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Patient",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MzIzMjE5LCJpYXQiOjE3NTYzMTk1OTEsImp0aSI6ImM4ZjI5ZDRjYmZiNjQ0OGM4NTY3N2E2YTA3ZGY3OThlIiwidXNlcl9pZCI6MX0.NYp5PlG-4TJUzuFGJrZYNjUPXlvnuycyrWycQ_aenMk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"John Doe\",\n    \"age\": 30,\n    \"gender\": \"Male\",\n    \"contact\": \"9381752077\",\n    \"address\": \"124 Main St\",\n    \"medical_history\": \"Brain issue\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/patients/1/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"patients",
+								"1",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Patient-Sample",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"John Doe\",\n    \"age\": 30,\n    \"gender\": \"Male\",\n    \"contact\": \"9381752077\",\n    \"address\": \"124 Main St\",\n    \"medical_history\": \"Brain issue\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/patients/1/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"patients",
+										"1",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 27 Aug 2025 18:50:19 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.9"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "225"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"John Doe\",\n    \"age\": 30,\n    \"gender\": \"Male\",\n    \"contact\": \"9381752077\",\n    \"address\": \"124 Main St\",\n    \"medical_history\": \"Brain issue\",\n    \"created_at\": \"2025-08-27T18:38:35.753988Z\",\n    \"updated_at\": \"2025-08-27T18:50:19.166684Z\",\n    \"user\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Patient",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MzIzMjE5LCJpYXQiOjE3NTYzMTk1OTEsImp0aSI6ImM4ZjI5ZDRjYmZiNjQ0OGM4NTY3N2E2YTA3ZGY3OThlIiwidXNlcl9pZCI6MX0.NYp5PlG-4TJUzuFGJrZYNjUPXlvnuycyrWycQ_aenMk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/patients/1/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"patients",
+								"1",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Patient-Sample",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/patients/1/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"patients",
+										"1",
+										""
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 27 Aug 2025 18:50:57 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.9"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Doctors",
+			"item": [
+				{
+					"name": "Create Doctor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MzIzMjE5LCJpYXQiOjE3NTYzMTk1OTEsImp0aSI6ImM4ZjI5ZDRjYmZiNjQ0OGM4NTY3N2E2YTA3ZGY3OThlIiwidXNlcl9pZCI6MX0.NYp5PlG-4TJUzuFGJrZYNjUPXlvnuycyrWycQ_aenMk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Dr. Krishna Dandu\",\n    \"specialization\": \"Neurologist\",\n    \"contact\": \"9381752077\",\n    \"email\": \"dr.krishna@gmail.com\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/doctors/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"doctors",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Doctor-Sample",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Dr. Smith\",\n    \"specialization\": \"Cardiologist\",\n    \"contact\": \"9876543210\",\n    \"email\": \"dr.smith@example.com\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/doctors/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"doctors",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 27 Aug 2025 18:51:43 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.9"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "199"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Dr. Smith\",\n    \"specialization\": \"Cardiologist\",\n    \"contact\": \"9876543210\",\n    \"email\": \"dr.smith@example.com\",\n    \"created_at\": \"2025-08-27T18:51:43.896919Z\",\n    \"updated_at\": \"2025-08-27T18:51:43.896919Z\"\n}"
+						},
+						{
+							"name": "Create Doctor-Sample 2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Dr. Krishna Dandu\",\n    \"specialization\": \"Neurologist\",\n    \"contact\": \"9381752077\",\n    \"email\": \"dr.krishna@gmail.com\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/doctors/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"doctors",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 27 Aug 2025 18:53:43 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.9"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "206"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"name\": \"Dr. Krishna Dandu\",\n    \"specialization\": \"Neurologist\",\n    \"contact\": \"9381752077\",\n    \"email\": \"dr.krishna@gmail.com\",\n    \"created_at\": \"2025-08-27T18:53:43.842220Z\",\n    \"updated_at\": \"2025-08-27T18:53:43.842220Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Doctors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MzIzMjE5LCJpYXQiOjE3NTYzMTk1OTEsImp0aSI6ImM4ZjI5ZDRjYmZiNjQ0OGM4NTY3N2E2YTA3ZGY3OThlIiwidXNlcl9pZCI6MX0.NYp5PlG-4TJUzuFGJrZYNjUPXlvnuycyrWycQ_aenMk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/doctors/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"doctors",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Doctors-Sample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/doctors/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"doctors",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 27 Aug 2025 18:54:23 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.9"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "408"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Dr. Smith\",\n        \"specialization\": \"Cardiologist\",\n        \"contact\": \"9876543210\",\n        \"email\": \"dr.smith@example.com\",\n        \"created_at\": \"2025-08-27T18:51:43.896919Z\",\n        \"updated_at\": \"2025-08-27T18:51:43.896919Z\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Dr. Krishna Dandu\",\n        \"specialization\": \"Neurologist\",\n        \"contact\": \"9381752077\",\n        \"email\": \"dr.krishna@gmail.com\",\n        \"created_at\": \"2025-08-27T18:53:43.842220Z\",\n        \"updated_at\": \"2025-08-27T18:53:43.842220Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Doctor by ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MzIzMjE5LCJpYXQiOjE3NTYzMTk1OTEsImp0aSI6ImM4ZjI5ZDRjYmZiNjQ0OGM4NTY3N2E2YTA3ZGY3OThlIiwidXNlcl9pZCI6MX0.NYp5PlG-4TJUzuFGJrZYNjUPXlvnuycyrWycQ_aenMk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/doctors/2/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"doctors",
+								"2",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Doctor by ID-Sample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/doctors/2/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"doctors",
+										"2",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 27 Aug 2025 18:54:50 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.9"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "206"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"name\": \"Dr. Krishna Dandu\",\n    \"specialization\": \"Neurologist\",\n    \"contact\": \"9381752077\",\n    \"email\": \"dr.krishna@gmail.com\",\n    \"created_at\": \"2025-08-27T18:53:43.842220Z\",\n    \"updated_at\": \"2025-08-27T18:53:43.842220Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Doctor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MzIzMjE5LCJpYXQiOjE3NTYzMTk1OTEsImp0aSI6ImM4ZjI5ZDRjYmZiNjQ0OGM4NTY3N2E2YTA3ZGY3OThlIiwidXNlcl9pZCI6MX0.NYp5PlG-4TJUzuFGJrZYNjUPXlvnuycyrWycQ_aenMk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Dr. Smith New\",\n    \"specialization\": \"Cardiology\",\n    \"contact\": \"9876543210\",\n    \"email\": \"dr.smith@example.com\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/doctors/1/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"doctors",
+								"1",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Doctor-Sample",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Dr. Smith New\",\n    \"specialization\": \"Cardiology\",\n    \"contact\": \"9876543210\",\n    \"email\": \"dr.smith@example.com\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/doctors/1/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"doctors",
+										"1",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 27 Aug 2025 19:01:17 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.9"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "201"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Dr. Smith New\",\n    \"specialization\": \"Cardiology\",\n    \"contact\": \"9876543210\",\n    \"email\": \"dr.smith@example.com\",\n    \"created_at\": \"2025-08-27T18:51:43.896919Z\",\n    \"updated_at\": \"2025-08-27T19:01:17.493578Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Doctor",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/doctors/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"doctors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patient-Doctor Mappings",
+			"item": [
+				{
+					"name": "Create Mapping",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MzIzMjE5LCJpYXQiOjE3NTYzMTk1OTEsImp0aSI6ImM4ZjI5ZDRjYmZiNjQ0OGM4NTY3N2E2YTA3ZGY3OThlIiwidXNlcl9pZCI6MX0.NYp5PlG-4TJUzuFGJrZYNjUPXlvnuycyrWycQ_aenMk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"patient\": 2,\n    \"doctor\": 1\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/mappings/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mappings",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Mapping-Sample",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"patient\": 2,\n    \"doctor\": 1\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/mappings/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"mappings",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 27 Aug 2025 18:55:32 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.9"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "77"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"assigned_date\": \"2025-08-27T18:55:32.275223Z\",\n    \"patient\": 2,\n    \"doctor\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Mappings",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MzIzMjE5LCJpYXQiOjE3NTYzMTk1OTEsImp0aSI6ImM4ZjI5ZDRjYmZiNjQ0OGM4NTY3N2E2YTA3ZGY3OThlIiwidXNlcl9pZCI6MX0.NYp5PlG-4TJUzuFGJrZYNjUPXlvnuycyrWycQ_aenMk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/mappings/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mappings",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Mappings-Sample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/mappings/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"mappings",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 27 Aug 2025 18:55:56 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.9"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "79"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"assigned_date\": \"2025-08-27T18:55:32.275223Z\",\n        \"patient\": 2,\n        \"doctor\": 1\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Mappings by Patient ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MzIzMjE5LCJpYXQiOjE3NTYzMTk1OTEsImp0aSI6ImM4ZjI5ZDRjYmZiNjQ0OGM4NTY3N2E2YTA3ZGY3OThlIiwidXNlcl9pZCI6MX0.NYp5PlG-4TJUzuFGJrZYNjUPXlvnuycyrWycQ_aenMk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/mappings/?patient_id=2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mappings",
+								""
+							],
+							"query": [
+								{
+									"key": "patient_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Mappings by Patient ID-Sample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/mappings/?patient_id=2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"mappings",
+										""
+									],
+									"query": [
+										{
+											"key": "patient_id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 27 Aug 2025 18:59:47 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.9"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "79"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"assigned_date\": \"2025-08-27T18:55:32.275223Z\",\n        \"patient\": 2,\n        \"doctor\": 1\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Delete Mapping",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/mappings/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mappings",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "access_token",
+			"value": "your_access_token_here"
+		}
+	]
+}
