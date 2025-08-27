@@ -40,58 +40,6 @@ A robust Django-based REST API for managing healthcare data, including patients,
 
 ## 🔧 Installation & Setup
 
-### Using Docker (Recommended)
-
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd whatbytes-django
-   ```
-
-2. Start the development environment:
-   ```bash
-   docker-compose up --build
-   ```
-
-3. Run migrations:
-   ```bash
-   docker-compose exec web python manage.py migrate
-   ```
-
-4. Create a superuser:
-   ```bash
-   docker-compose exec web python manage.py createsuperuser
-   ```
-
-The application will be available at:
-- API: http://localhost:8000
-- pgAdmin: http://localhost:5050 (email: admin@admin.com, password: admin)
-
-### Production Deployment
-
-1. Set up environment variables:
-   ```bash
-   cp .env.example .env
-   # Edit .env with your production settings
-   ```
-
-2. Build and run the production stack:
-   ```bash
-   docker-compose -f docker-compose.prod.yml up --build -d
-   ```
-
-3. Run migrations:
-   ```bash
-   docker-compose -f docker-compose.prod.yml exec web python manage.py migrate
-   ```
-
-4. Collect static files:
-   ```bash
-   docker-compose -f docker-compose.prod.yml exec web python manage.py collectstatic --no-input
-   ```
-
-### Manual Installation
-
 1. Clone the repository:
    ```bash
    git clone <repository-url>
@@ -243,21 +191,6 @@ This project follows Python's PEP 8 style guide and Django's coding standards. K
 - Secure password storage
 - Request validation
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 👥 Authors
-
-- Your Name - Initial work
 
 ## 🙏 Acknowledgments
 
