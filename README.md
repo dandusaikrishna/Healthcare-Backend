@@ -1,7 +1,20 @@
 # Healthcare Backend API
 
-A robust Django-based REST API for managing healthcare data, including patients, doctors, and their relationships.
+> A robust Django-based REST API for managing healthcare data, including patients, doctors, and their relationships.
 
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
+[![Django](https://img.shields.io/badge/Django-5.2.4-green.svg)](https://djangorestframework.org)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue.svg)](https://postgresql.org)
+
+---
+## 🎥 Video Tutorials
+
+| Tutorial | Link | Description |
+|----------|------|-------------|
+| 🚀 **Setup & Development** | [Watch Now](https://drive.google.com/file/d/17QCv4pfbuGwF-YY-i1CHJYKyUKcSJ8ya/view?usp=sharing) | Initial setup, configuration & API testing |
+
+
+---
 ## 🚀 Features
 
 - **User Authentication**
