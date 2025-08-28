@@ -11,7 +11,7 @@
 
 | Tutorial | Link | Description |
 |----------|------|-------------|
-| 🚀 **Setup & Development** | [Watch Now](https://drive.google.com/file/d/17QCv4pfbuGwF-YY-i1CHJYKyUKcSJ8ya/view?usp=sharing) | Initial setup, configuration & API testing |
+| 🚀 **Setup & Development** | [Watch Now](https://drive.google.com/file/d/1ypI4K_Qgz6Cr1zpiH0wcu1A8JsUN9AkB/view?usp=drive_link) | Initial setup, configuration & API testing |
 
 
 ---
