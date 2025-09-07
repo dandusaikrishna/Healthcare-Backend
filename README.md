@@ -45,6 +45,7 @@
 - **Authentication:** JWT (djangorestframework-simplejwt)
 - **Environment Management:** python-dotenv
 
+
 ## 📋 Prerequisites
 
 - Python 3.11+
