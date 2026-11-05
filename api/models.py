@@ -5,7 +5,7 @@ class Patient(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     age = models.IntegerField()
-    gender = models.CharField(max_length=10)
+    gender = models.CharField(max_length=15)
     contact = models.CharField(max_length=15)
     address = models.TextField()
     medical_history = models.TextField(blank=True)
